@@ -1,0 +1,213 @@
+/* WP Portfolio Catalogue admin controls; no public theme styles are affected. */
+.wppc-admin-panel {
+	padding: 6px 2px;
+}
+.wppc-admin-panel .description {
+	max-width: 86ch;
+	line-height: 1.6;
+}
+.wppc-admin-fields {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0 22px;
+	max-width: 1080px;
+}
+.wppc-admin-field {
+	min-width: 0;
+	margin: 12px 0;
+}
+.wppc-admin-field label {
+	display: block;
+	margin-bottom: 6px;
+	font-weight: 600;
+}
+.wppc-admin-field input,
+.wppc-admin-field select,
+.wppc-admin-field textarea {
+	width: 100%;
+	max-width: none;
+}
+.wppc-admin-field textarea {
+	min-height: 100px;
+	resize: vertical;
+}
+.wppc-admin-field .description {
+	display: block;
+	margin-top: 6px;
+}
+.wppc-admin-field-wide {
+	grid-column: 1 / -1;
+}
+.wppc-admin-section {
+	margin-top: 24px;
+	padding-top: 16px;
+	border-top: 1px solid #dcdcde;
+}
+.wppc-admin-section:first-child {
+	margin-top: 0;
+	padding-top: 0;
+	border-top: 0;
+}
+.wppc-admin-section h3 {
+	margin: 8px 0;
+	font-size: 14px;
+}
+.wppc-admin-row {
+	padding: 14px 16px 6px;
+	margin-top: 14px;
+	border: 1px solid #dcdcde;
+	border-radius: 6px;
+	background: #fafafa;
+}
+.wppc-admin-row-head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+}
+.wppc-admin-row-tools,
+.wppc-admin-gallery-tools,
+.wppc-admin-actions {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 6px;
+}
+.wppc-admin-panel .wppc-admin-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 32px;
+	min-height: 32px;
+	padding: 3px;
+}
+.wppc-admin-panel .wppc-admin-icon .dashicons {
+	font-size: 18px;
+	width: 18px;
+	height: 18px;
+}
+.wppc-admin-gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+	gap: 14px;
+	max-width: 1080px;
+	margin: 18px 0;
+	padding: 0;
+	list-style: none;
+}
+.wppc-admin-gallery-item {
+	position: relative;
+	margin: 0;
+	padding: 6px;
+	border: 1px solid #c3c4c7;
+	border-radius: 6px;
+	background: #fff;
+	cursor: grab;
+}
+.wppc-admin-gallery-item img {
+	display: block;
+	width: 100%;
+	height: 108px;
+	border-radius: 3px;
+	object-fit: cover;
+}
+.wppc-admin-gallery-tools {
+	justify-content: center;
+	margin-top: 6px;
+}
+.wppc-admin-gallery-item.is-dragging {
+	opacity: 0.5;
+	outline: 2px solid #2271b1;
+}
+.wppc-admin-gallery-item.is-drop-target {
+	outline: 3px solid #2271b1;
+	outline-offset: 2px;
+}
+.wppc-admin-legacy {
+	padding: 10px 14px;
+	border-inline-start: 3px solid #72aee6;
+	background: #f0f6fc;
+	margin: 16px 0;
+}
+.wppc-admin-legacy-images {
+	display: flex;
+	gap: 6px;
+	flex-wrap: wrap;
+}
+.wppc-admin-legacy-images img {
+	object-fit: cover;
+	border-radius: 3px;
+}
+.wppc-admin-settings {
+	max-width: 1120px;
+}
+.wppc-admin-intro {
+	font-size: 15px;
+	line-height: 1.7;
+}
+.wppc-admin-quickstart {
+	padding: 16px 24px;
+	border: 1px solid #dcdcde;
+	border-radius: 8px;
+	background: #fff;
+	margin: 22px 0;
+}
+.wppc-admin-quickstart h2 {
+	margin: 4px 0 14px;
+}
+.wppc-admin-quickstart li {
+	margin-bottom: 9px;
+	line-height: 1.6;
+}
+.wppc-admin-shortcode {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	flex-wrap: wrap;
+	margin: 16px 0;
+}
+.wppc-admin-quickstart code {
+	font-size: 13px;
+	line-height: 1.8;
+	overflow-wrap: anywhere;
+}
+.wppc-admin-settings .form-table th {
+	width: 225px;
+}
+.wppc-admin-settings .form-table .description {
+	max-width: 75ch;
+	line-height: 1.7;
+}
+.wppc-admin-settings input[type="color"] {
+	width: 72px;
+	height: 40px;
+	padding: 3px;
+	border: 1px solid #8c8f94;
+	border-radius: 4px;
+	background: #fff;
+}
+.wppc-admin-panel [hidden],
+.wppc-admin-settings [hidden] {
+	display: none;
+}
+@media (max-width: 782px) {
+	.wppc-admin-fields {
+		grid-template-columns: minmax(0, 1fr);
+	}
+	.wppc-admin-row {
+		padding: 12px;
+	}
+	.wppc-admin-gallery {
+		grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
+	}
+	.wppc-admin-panel .wppc-admin-icon {
+		min-width: 36px;
+		min-height: 36px;
+	}
+	.wppc-admin-quickstart {
+		padding: 16px;
+	}
+	.wppc-admin-settings .form-table th {
+		width: auto;
+	}
+}
