@@ -1,0 +1,5 @@
+.wp-block-wp-portfolio-catalogue-catalogue { width: 100%; }
+.wppc-editor-selected { display: flex; flex-wrap: wrap; gap: 6px; margin-block: 12px; }
+.wppc-editor-selected .components-button { height: auto; min-height: 30px; white-space: normal; text-align: start; }
+.wppc-editor-help { font-size: 12px; color: #50575e; }
+.wp-block-wp-portfolio-catalogue-catalogue .wppc-catalogue { font-family: inherit; }
